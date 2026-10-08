@@ -40,29 +40,27 @@ public class ColorChange : MonoBehaviour
         // IF health is 1, set the value of 'r' to 0.0.
 
         _healthText.gameObject.SetActive(true);
-        _healthText.text = "h = 4";
+        _healthText.text = "h = " + health;
 
         if (health == 0) 
         {
             gameObject.SetActive(false);
-        }
 
-        if (health == 3)
+        } 
+        else if(health == 3)
         {
             r = 1.0f;
-            _healthText.text = "h = 3";
+            //_healthText.text = "h = 3"; 
         }
-
-        if (health == 2)
+        else if(health == 2)
         {
             r = 0.5f;
-            _healthText.text = "h = 2";
+            //_healthText.text = "h = 2"; 
         }
-
-        if (health == 1) 
+        else if(health == 1) 
         {
             r = 0.0f;
-            _healthText.text = "h = 1";
+            //_healthText.text = "h = 1"; (less convenient way to do it...)
         }
 
         // When you're done, uncomment the line below.

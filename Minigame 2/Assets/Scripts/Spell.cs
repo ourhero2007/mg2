@@ -26,7 +26,7 @@ public class Spell : MonoBehaviour
 
         // STEP 2 -------------------------------------------------------------
         // Uncomment and fix the if statement.
-        if (_timeLeft <= 0.0)
+        if (_timeLeft <= 0.0) 
         {
            gameObject.SetActive(false);
             _collider.enabled = false;
