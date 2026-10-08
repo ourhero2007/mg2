@@ -21,12 +21,16 @@ public class ColorChange : MonoBehaviour
         // STEP 3 -------------------------------------------------------------
         // Write a line of code to subtract ONE from the value of 'health'.
         // You don't need to declare 'health' again - just change the value.
-        
+
+        health -= 1;
+
         // STEP 3 -------------------------------------------------------------
 
         // STEP 4 -------------------------------------------------------------
         // DECLARE a new float value named 'r' with a value of 1.
-        
+
+        float r = 1.0f;
+
         // STEP 4 -------------------------------------------------------------
 
         // STEP 5 -------------------------------------------------------------
@@ -34,21 +38,42 @@ public class ColorChange : MonoBehaviour
         // IF health is 3, set the value of 'r' to 1.0.
         // IF health is 2, set the value of 'r' to 0.5.
         // IF health is 1, set the value of 'r' to 0.0.
-        if (health == 0)
+
+        _healthText.gameObject.SetActive(true);
+        _healthText.text = "h = 4";
+
+        if (health == 0) 
         {
             gameObject.SetActive(false);
         }
-        
+
+        if (health == 3)
+        {
+            r = 1.0f;
+            _healthText.text = "h = 3";
+        }
+
+        if (health == 2)
+        {
+            r = 0.5f;
+            _healthText.text = "h = 2";
+        }
+
+        if (health == 1) 
+        {
+            r = 0.0f;
+            _healthText.text = "h = 1";
+        }
+
         // When you're done, uncomment the line below.
-        //_spriteRenderer.color = new Color(r, 0.2f, 0.2f);
+
+        _spriteRenderer.color = new Color(r, 0.2f, 0.2f);
+
         // STEP 5 -------------------------------------------------------------
 
-        _healthText.gameObject.SetActive(true);
-
         // STEP 6 -------------------------------------------------------------
-        // Add the value of heatlh to this string, so that the heatlh text
-        //      displays the prop's current health value.
-        _healthText.text = "h = ";
+        // Add the value of heatlh to this string, so that the heatlh text displays the prop's current health value.
+
         // STEP 6 -------------------------------------------------------------
     }
 }

@@ -1,6 +1,6 @@
-# minigame 2
+# Minigame 2
 ## Devlog
-Write your Devlog here.
-
+1. When I was fixing the if statement in spell.cs a yellow warning popped up that said "possible mistaken empty statement." I wasn't sure what I was doing wrong so I ignored it until I had to write the three if statements for colorchange.cs. When writing those statements a whole bunch of the same warnings popped up, then I realized it was because I was putting an unnecessary semicolon after the parentheses in the if statements, and I went back to the slides to double check how exactly to format if statements. Also, this helped me when fixing the error in the spell.cs if statement, I forgot that the comparison phrase needed to be entirely in the parenthesees, not just the variable name, so I got an error from that. 
+2. I'm guessing from the name that it has something to do with rendering the color of the sprites used for the box/chest that our player character has to destroy. Maybe the "color" portion indicates that we're specifically changing something about the color. And the period helps us seperate the general command of "spriteRenderer" (because rendering can mean many visual components of the sprite?) with the more specific clarification that we will be editing the color of the sprite. Maybe "new" indicates that the color changes over time? Or after some kind of input. In the parentheses we have the variable "r" and 2 values of 0.2f. Not sure what those mean at all, but I do know r is the variable we used to store information about the color of the sprite. I will guess that the values probably control something to do with the redness/darkness of the sprite after we hit it with the spell.
 ## Open-Source Assets
 - Pixel art environment & character sprites: https://assetstore.unity.com/packages/2d/environments/pixel-art-top-down-basic-187605
